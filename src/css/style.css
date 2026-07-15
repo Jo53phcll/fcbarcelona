@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-color:blue ;
+}
+
+*{
+    font-family:"roboto",sans-serif;
+}
+.mi-titulo-hero{
+ font-family: "Hibur Mono", monospace;
+}
