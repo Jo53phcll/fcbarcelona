@@ -2,13 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color:blue ;
-}
-
 *{
     font-family:"roboto",sans-serif;
 }
 .mi-titulo-hero{
  font-family: "Hibur Mono", monospace;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(300deg, #020b33, #700404);
+    background-attachment: fixed;
+    position: relative;
+}
+
+.tarjeta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #000000, #6f00ff);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgb(183, 0, 255); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translate(-50%, -54%);
+    box-shadow: 0 15px 35px rgb(120, 2, 255); 
+    background: linear-gradient(135deg, #000000, #6f00ff);
 }
